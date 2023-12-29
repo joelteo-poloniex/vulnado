@@ -1,0 +1,5 @@
+name: Security Scans
+on: [pull_request_target, workflow_dispatch]
+jobs:
+  security_scans:
+    uses: joelteo-poloniex/security-github-actions/.github/workflows/credentialScan.yml@main
